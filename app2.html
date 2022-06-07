@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)https://storozhoriginal.github.io/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="https://bootstrap-4.ru/docs/3.3.2/assets/ico/favicon.ico">
+
+    <title>Похудение</title>
+
+    
+    <link href="./main_files/bootstrap.min.css" rel="stylesheet">
+
+   
+    <link href="./main_files/jumbotron.css" rel="stylesheet">
+
+
+
+
+
+<script>
+  function ITM(){
+    var myform = document.forms.myform; 
+    var a = parseFloat(myform.a.value);
+    var b = parseFloat(myform.b.value);
+    myform.res.value = a/((b*b)/100)*100;
+    
+    var trs = tbl.querySelectorAll('tr');
+    trs.forEach(function(i){
+      i.style.backgroundColor = '';
+      var minW = i.getAttribute('minw');
+      var maxW = i.getAttribute('maxw');
+      if(myform.res.value > minW && myform.res.value < maxW)
+        i.style.backgroundColor = 'green';
+    })
+  }
+</script>
+  </head>
+
+  <body>
+    <script src="./main_files/calc.js"></script>
+<script async="" src="./main_files/analytics.js.Без названия"></script><script async="" src="./main_files/analytics.js(1).Без названия"></script><script type="text/javascript" async="" src="./main_files/watch.js.Без названия"></script><script async="" src="./main_files/analytics.js(2).Без названия"></script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-4481610-59', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+ 
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+             
+
+           
+
+        
+        </div>
+             <nav>
+         <ul class="nav nav-pills pull-right">
+            <li role="presentation"><a href="index.html">Домашняя страница</a></li>
+            <li role="presentation"><a href="page2.html">Вторая страница</a></li>
+            <li role="presentation" ><a href="app1.html">Суточное потребление калорий</a></li>
+            <li role="presentation" class="active"><a href="app2.html">ИМТ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+
+
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+
+      <div class="container">
+
+        <center><div><p align="center"><font size="3" color="black" face="Arial">Расчет Индекса Массы Тела (ИМТ)<br>
+  <hr>
+  <form method=post id="myform">
+   <p align="center">Ваш пол:
+     <select name="itm">
+     <option value="r1">Мужской</option>
+     <option value="r2">Женский</option>
+     </select>
+   <p align="center"><br><font size="3" color="black" face="Arial">Ваш вес:  <input type="number" name="a" value=0 /> кг.
+   <p align="center"><br><font size="3" color="black" face="Arial">Ваш рост:  <input type="number" name="b" value=0 /> см. <br>
+   <p align="center"><br><input type="reset" value="Очистить поля" />            
+   <p align="center"><input type="button" name="sum" value="Рассчитать" onClick="ITM()" />
+   <p align="center"><br>Результат:  <input type="number" readonly="readonly" id="res" name="res"  />
+  </form></div> </center>
+  <table id="tbl">
+    <tr minW="0.0" maxW="16.0">
+      <td>16 и менее - Выраженный дефицит массы тела</td>
+      <td></td>
+    </tr>
+    <tr minW="16.0" maxW="18.5">
+      <td>16 - 18.5 - Недостаточная (дефицит) масса тела</td>
+      <td></td>
+    </tr>
+    <tr minW="18.5" maxW="25.0">
+      <td>18.5 - 25 - Норма</td>
+      <td></td>
+    </tr>
+    <tr minW="25.0" maxW="30.0">
+      <td>25 - 30 - Избыточная масса тела (предожирение)</td>
+      <td></td>
+    </tr>
+    <tr minW="30.0" maxW="35.0">
+      <td>30 - 35 - Ожирение первой степени</td>
+      <td></td>
+    </tr>
+    <tr minW="35.0" maxW="40.0">
+      <td>35 - 40 - Ожирение второй степени</td>
+      <td></td>
+    </tr>
+    <tr minW="40.0" maxW="99999.0">
+      <td> 40 и более - Ожирение третьей степени (морбидное)</td>
+      <td></td>
+    </tr>
+  </table>
+        
+        
+    
+   
+
+
+      <hr>
+
+      <footer>
+        <p>© Меринова Д.А. 2022 г.
+           © Coding by StorozhOriginal
+            2022 г.</p>
+      </footer>
+    </div>
+    <script src="./main_files/jquery.min.js.Без названия"></script>
+    <script src="./main_files/bootstrap.min.js.Без названия"></script>
+  
+</body></html>
